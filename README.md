@@ -3,8 +3,11 @@ A RESTful API built with Node.js and Express.js for managing books, user reviews
 
 🔧 Tech Stack
 1.Backend: Node.js, Express.js
+
 2.Database: MongoDB (with Mongoose)
+
 3.Authentication: JWT (JSON Web Token)
+
 4.Environment Configuration: dotenv
 
 🚀 Features
@@ -76,19 +79,12 @@ GET /search?query=xyz – Search by book title or author (case-insensitive)
 🧪 Sample Requests
 Signup
 bash
-Copy
-Edit
 curl -X POST http://localhost:5000/signup -H "Content-Type: application/json" -d '{"username":"john","password":"123456"}'
 Login
 bash
-Copy
-Edit
 curl -X POST http://localhost:5000/login -H "Content-Type: application/json" -d '{"username":"john","password":"123456"}'
 🗄️ Database Schema (MongoDB)
 User
-js
-Copy
-Edit
 {
   username: String,
   password: String (hashed)
