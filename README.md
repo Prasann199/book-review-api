@@ -119,7 +119,11 @@ User
 
 {
   username: String,
+  
+  email: String,
+  
   password: String (hashed)
+  
 }
 
 Book
@@ -129,8 +133,11 @@ js
 
 {
   title: String,
+  
   author: String,
+  
   genre: String,
+  
 }
 
 Review
@@ -138,9 +145,13 @@ js
 
 {
   user: ObjectId,
+  
   book: ObjectId,
+  
   rating: Number (1–5),
+  
   comment: String
+  
 }
 
 📌 Design Decisions
