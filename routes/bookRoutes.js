@@ -13,10 +13,10 @@ router.get('/books', getBooks);
 //Get /api/books/search?query=text
 router.get('/books/search',searchBook);
 
-// GET /api/books/getBooks/ById
+// GET /api/books/ById
 router.get('/books/:id', getBookById);
 
-// GET /api/books/deleteBooks/ById
+// DELETE /api/books/ById
 router.delete('/books/:id', deleteBookById);
 
 router.post('/books/:id/reviews', authMiddleware, addReview); // POST /api/reviews/:bookId
